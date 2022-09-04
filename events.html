@@ -11,10 +11,137 @@
 <body>
     <center><h1 style="background-color:red ;"> JavaScript Events </h1></center>
 
+    <!-- <button onclick="myfunc">click me</button>
+    
+    <h1 id="header">this header</h1> -->
 
+    <!-- <input type="text" value="copy me" onkeypress="mykeyfunc()"> -->
 
+    <!-- <img src="../khan/IMG_1656677257.jpg"  alt="" onerror="errfunc()"> -->
 
+    <!-- <div id="mydiv" onmouseover="myfuncover()" style="height:200px ; width: 200px; ">
+        somthing in div box
+    </div>
+        <h4 id="showRN"></h4> -->
+
+        <!-- <div class="row">
+            <div class="col">
+                    User A: <b id="totalscoreuserB"></b>
+            </div>
+            <div class="col"> <img src="./pics/1.png" alt=""><br><br>
+                <button class="btn btn-info" onclick="funcUserA()" id="userAB">User A</button>
+            </div>
+            <div class="col"> <img src="./pics/1.png" alt=""><br><br>
+                <button class="btn btn-danger" onclick="funcUserB()" id="userBB">User B</button>
+            </div>
+            <div class="col">
+                User B <b id="totalscoreuserB"></b>
+            </div>
+        </div> -->
+
+        <!-- <button id="thebtn">click me</button> -->
+
+        <h1 id="pageheader">this main opage header</h1>
 
 </body>
 <script src="./java.js"></script>
+
+<script>
+   
+
+//     var thehead = document.getElementById('header')
+
+// function myfunc(){
+//     alert('button clicked')
+//     thehead.style.color="red"
+//}
+// function errfunc(){
+//     alert('invalid path')
+// }
+
+// var thediv = document.getElementById('mydiv');
+// var showRandom = document.getElementById('showRN');
+// function myfuncover(){
+//     thediv.style.color="red" 
+//     thediv.style.backgroundColor="green"
+//     thediv.style.padding="30px"
+//     thediv.style.fontSize="30px"
+//     thediv.style.fontFamily="cursive"
+
+//     var a = Math.random();
+//     var b = a*5;
+//     var c= Math.floor(b)+1
+//     showRandom.innerHTML = c;
+// }
+
+// var theimgA = document.getElementById('imgA')
+// var theimgB = document.getElementById('imgB')
+
+// var total = document.getElementById('totalscoreUserA')
+// var totalx = document.getElementById('totalscoreUserB')
+
+// function funcUserA(){
+//     //alert('user A clicked')
+//     var num1 = Math.random();
+//     var num2 = num1*6
+//     var intNum = Math.floor(num2)+1
+
+//     var num1x = Math.random();
+//     var num2x = num1x*6
+//     var intNumx = Math.floor(num2x)+1
+
+//     theimgA.src="./pics/"+intNum+".png" 
+//     theimgB.src="./pics/"+intNumx+".png"
+ 
+
+//     total.innerHTML=intNum + intNumx;
+// }
+
+
+// function funcUserB(){
+//    // alert('user B clicked')
+//    var num1 = Math.random();
+//     var num2 = num1*6
+//     var intNum = Math.floor(num2)+1
+
+//     var num1x = Math.random();
+//     var num2x = num1x*6
+//     var intNumx = Math.floor(num2x)+1
+
+//     theimgA.src="./pics/2.png" 
+//     theimgB.src="./pics/"+intNumx+".png"
+
+//     total.innerHTML=intNum + intNumx;
+//}
+   
+var btn =document.getElementById('thebtn');
+
+
+btn.addEventListener('click', myfunc);
+function myfunc(){
+    alert('im add event listner')
+}
+
+var header = document.getElementById('mouseover', funcA());
+header.addEventListener('mouseover' ,function(){
+
+    theHead.style.color="red"
+
+})
+
+header.addEventListener('mouseover' ,function(){
+
+theHead.style.color="green"
+
+})
+
+header.addEventListener('mouseover' ,function(){
+
+theHead.style.color="yellow"
+
+})
+
+
+
+</script>
 </html>
